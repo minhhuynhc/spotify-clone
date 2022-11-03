@@ -1,0 +1,36 @@
+.header{
+    display: flex;
+    /* background-color: #fff; */
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+.avt{
+    width: 40px;
+    height: 40px;
+    border-radius: 100rem;
+    margin: 0 auto;
+}
+.button{
+    /* display: flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 100rem;
+    background-color: #242424;
+    align-items: center;
+    justify-content: center; */
+}
+.userInfo{
+    /* background-color: #fff; */
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 50px;
+    padding: 5px;
+    border-radius: 30px;
+}
+.userName{
+    margin-left: 3px;
+    font-size: 14px;
+}

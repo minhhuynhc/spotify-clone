@@ -1,0 +1,28 @@
+.body{
+    padding: 10px;
+    /* border: 1px solid red; */
+    flex: 80%;
+    height: 100vh;
+    background:linear-gradient(rgb(121, 106, 106), black);
+    width: 100%;
+    overflow-y: overlay;
+    grid-area: main-view;
+}
+.userInfo{
+    
+}
+.songList_header{
+ /* padding-bottom: 100px; */
+ display: grid;
+ grid-template-columns: [index] 16px [first] 6fr [var1] 4fr [var2] 3fr [last] minmax(120px,1fr);
+ grid-gap: 16px;
+ border-bottom: 2px solid gray;
+ /* position: sticky; */
+}
+
+.body::-webkit-scrollbar {
+    display: none;
+  }
+.columnheader{
+    
+}

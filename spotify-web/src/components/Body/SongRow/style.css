@@ -1,0 +1,61 @@
+.songRow{
+    display: grid;
+    transition: 200ms background-color ease-in;
+    /* background-color: grey; */
+    grid-template-columns: [index] 16px [first] 6fr [var1] 4fr [var2] 3fr [last] minmax(120px,1fr);
+    color: white;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+.songRow:hover{
+    background-color: black;
+    opacity: 0.8;
+}
+
+.songAvt{
+    width: 30px;
+    height: 30px;
+}
+
+.songInfo{
+    margin-left: 10px;
+    display: grid;
+    column-gap: 8px;
+    grid-template:
+        "title"
+        "badges subtitle";
+    
+}
+
+.songName{
+    font-weight: bold;
+}
+
+.songIngo>.artists{
+    grid-area: subtitle;
+    grid-column-start: badges;
+}
+.songIngo>.title{
+    grid-area: title;
+    justify-self: start;
+    font-size: 16px;
+    font-weight: bold;
+}
+.songData{
+    display: flex;
+    align-items: center;
+}
+.index{
+    display: flex;
+    align-items: center;
+}
+.moreInfo{
+    display: block;
+    transition: opacity 400ms ease-out;
+    opacity: 0;
+}
+.songRow:hover > .moreInfo{
+    display: block;
+    opacity: 1;
+}

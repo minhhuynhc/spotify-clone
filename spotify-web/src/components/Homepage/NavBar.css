@@ -1,0 +1,115 @@
+html, body {
+    height: 100%;
+  }
+  
+.navBar{
+    grid-area: nav-bar;
+    background: #040404;
+    border: 1px solid black;
+    /* height:  100vh; */
+    flex-direction: column;
+    flex: 20%;
+    min-width: 150px;
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+
+}
+.navBar-logo{
+    object-fit: contain;
+    width: 100px;
+   margin-right: auto;
+}
+.addButton{
+  display: flex;
+  color: gray;
+  background-color: black;
+}
+.addButton:hover{
+  color: white;
+}
+
+.false{
+  display: none;
+}
+.true{
+  display: flex;
+}
+
+button{
+  border: none;
+  background-color: transparent;
+}
+ 
+.addBox{
+  width: 10px;
+  /* display: flex; */
+  /* margin-left: 10px; */
+  /* margin-right: 10px; */
+  justify-content: space-between;
+}
+input{
+  width: 300px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid gray;
+  /* margin-right: 20px; */
+}
+.addBtt{
+  display: flex;
+  /* background-color: white; */
+  color: white;
+  width: 50px;
+  height: 30px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.addBtt:hover{
+  background-color: gray;
+  opacity: 0.5;
+}
+.option{
+  transition: 100ms background-color ease-in;
+  
+}
+.option:hover{
+  background-color: gray;
+}
+.likedSong{
+  filter: brightness(50%);
+  transition: brightness 200ms ease-in;
+  display: flex;
+}
+.iconBox{
+  height: 25px;
+  width: 25px;
+  background: linear-gradient(rgb(39, 94, 212),rgb(214, 228, 243));
+  text-align: center;
+  border: none;
+  border-radius: 2px;
+  /* padding: 6px; */
+  display: flex;
+  justify-content: center;
+}
+.icon{
+  width: 20px;
+  height: 20px;
+}
+.likedSong:hover{
+  filter: brightness(85%);
+}
+.overlay{
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.1);
+  bottom: 0;
+  /* display: flex; */
+  display: none;
+  justify-content: center;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0
